@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Farhad Hasanli — Aerospace Engineering researcher working on computational fluid dynamics, high-order numerical methods, DGSEM, entropy-stable schemes, and scientific computing."
+  />
+  <title>Farhad Hasanli | Computational Fluid Dynamics Researcher</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">Farhad Hasanli</a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Toggle navigation"
+      >
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Research Work</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Computational Fluid Dynamics · Numerical Methods · Scientific Computing</p>
+
+          <h1>
+            Farhad Hasanli
+          </h1>
+
+          <p class="hero-title">
+            Aerospace Engineering Researcher
+          </p>
+
+          <p class="hero-summary">
+            I study high-order numerical methods for computational fluid dynamics,
+            with a focus on discontinuous Galerkin spectral element methods,
+            entropy-stable formulations, robust shock capturing, and high-performance
+            scientific computing.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#research">View Research</a>
+            <a class="button secondary" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <aside class="focus-card" aria-label="Research focus">
+          <p class="focus-label">Research focus</p>
+          <ul>
+            <li>High-order CFD</li>
+            <li>DG / DGSEM</li>
+            <li>Entropy-stable methods</li>
+            <li>Shock capturing & subcell methods</li>
+            <li>Navier–Stokes solvers</li>
+            <li>High-performance computing</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section section-muted">
+      <div class="container narrow">
+        <p class="section-kicker">About</p>
+        <h2>Research biography</h2>
+
+        <p>
+          I am a doctoral researcher in Aerospace Engineering at Texas A&amp;M University.
+          My research interests center on computational fluid dynamics and the development
+          of accurate, stable, and efficient numerical methods for challenging flow problems.
+        </p>
+
+        <p>
+          My work has focused on high-order discontinuous Galerkin spectral element methods
+          (DGSEM), including entropy-stable split-form discretizations, viscous formulations,
+          shock sensing, and subcell finite-volume blending. I am particularly interested in
+          methods that retain high-order accuracy in smooth regions while remaining robust
+          near shocks and other under-resolved flow features.
+        </p>
+
+        <p>
+          More broadly, I am interested in numerical methods for partial differential equations,
+          compressible and incompressible flow, turbulence, direct numerical simulation,
+          scientific software, and high-performance computing.
+        </p>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="container">
+        <p class="section-kicker">Research</p>
+        <h2>Areas of interest</h2>
+
+        <div class="cards three-column">
+          <article class="card">
+            <h3>High-Order CFD</h3>
+            <p>
+              High-order spatial discretizations for compressible and incompressible
+              flow, with emphasis on accuracy, robustness, and efficient implementation.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>DG / DGSEM</h3>
+            <p>
+              Discontinuous Galerkin spectral element methods based on nodal collocation,
+              Legendre–Gauss–Lobatto points, and high-order polynomial representations.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Entropy Stability</h3>
+            <p>
+              Split-form and entropy-stable discretizations designed to improve nonlinear
+              stability for under-resolved and compressible flow simulations.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Shock Capturing</h3>
+            <p>
+              Sensors, artificial stabilization, and subcell finite-volume blending for
+              robust treatment of shocks and discontinuities.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Turbulence & DNS</h3>
+            <p>
+              Numerical simulation of turbulent flows, including high-resolution and
+              direct numerical simulation approaches.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Scientific Computing</h3>
+            <p>
+              Parallel numerical software, performance-oriented implementation, and
+              scalable computational methods for fluid dynamics.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-muted">
+      <div class="container">
+        <p class="section-kicker">Research Work</p>
+        <h2>Selected work</h2>
+
+        <div class="project-list">
+          <article class="project">
+            <div>
+              <p class="project-type">Numerical solver</p>
+              <h3>High-Order DGSEM CFD Solver</h3>
+            </div>
+            <div>
+              <p>
+                Development of a high-order discontinuous Galerkin spectral element solver
+                for the Euler and Navier–Stokes equations in one, two, and three dimensions.
+              </p>
+              <p>
+                The solver includes entropy-stable split forms, viscous discretization,
+                multiple explicit Runge–Kutta schemes, shock sensing, and subcell
+                finite-volume blending.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div>
+              <p class="project-type">Stabilization</p>
+              <h3>Subcell Shock Capturing</h3>
+            </div>
+            <div>
+              <p>
+                Investigation of robust shock-capturing strategies that blend high-order
+                DGSEM with lower-order subcell finite-volume methods in troubled regions.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div>
+              <p class="project-type">Flow simulation</p>
+              <h3>Canonical CFD Test Problems</h3>
+            </div>
+            <div>
+              <p>
+                Numerical studies involving shock tubes, double Mach reflection,
+                Kelvin–Helmholtz instability, forward-facing step, Sedov blast,
+                triple-point problems, and lid-driven cavity flow.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div>
+              <p class="project-type">Current interests</p>
+              <h3>Turbulent Channel Flow</h3>
+            </div>
+            <div>
+              <p>
+                Interest in high-resolution wall-bounded turbulence simulations and
+                direct numerical simulation using high-order methods and modern
+                high-performance computing architectures.
+              </p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <p class="section-kicker">Education</p>
+        <h2>Academic background</h2>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div>
+              <p class="timeline-school">Texas A&amp;M University</p>
+              <h3>Ph.D. in Aerospace Engineering</h3>
+              <p>
+                Doctoral research in computational fluid dynamics and high-order
+                numerical methods.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div>
+              <p class="timeline-school">University of Illinois Urbana-Champaign</p>
+              <h3>M.S. in Aerospace Engineering</h3>
+              <p>
+                Research focused on entropy-stable DGSEM and subcell blending methods
+                for robust high-order CFD.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div>
+              <p class="timeline-school">University of Aberdeen</p>
+              <h3>B.Eng. in Petroleum Engineering</h3>
+              <p>First Class Honours.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section section-muted">
+      <div class="container narrow">
+        <p class="section-kicker">Publications &amp; Thesis</p>
+        <h2>Research output</h2>
+
+        <div class="publication-card">
+          <p class="publication-type">Master's thesis</p>
+          <h3>
+            Master's Thesis — Computational Fluid Dynamics
+          </h3>
+          <p>
+            University of Illinois Urbana-Champaign, 2025.
+          </p>
+          <p class="small">
+            Exact thesis title and permanent repository link can be added here.
+          </p>
+        </div>
+
+        <p class="empty-state">
+          Additional papers, preprints, conference presentations, and research software
+          can be added here as they become available.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Connect</h2>
+          <p>
+            For research discussions, collaboration, or academic inquiries, feel free
+            to reach out.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <!-- Replace these placeholders with your actual URLs/email. -->
+          <a href="https://github.com/aydin-hasanli" target="_blank" rel="noopener noreferrer">
+            GitHub
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a href="#" aria-disabled="true" class="placeholder-link">
+            LinkedIn
+            <span>add URL</span>
+          </a>
+
+          <a href="#" aria-disabled="true" class="placeholder-link">
+            Email
+            <span>add email</span>
+          </a>
+
+          <a href="#" aria-disabled="true" class="placeholder-link">
+            CV
+            <span>add PDF</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Farhad Hasanli</p>
+      <p>Built for GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
